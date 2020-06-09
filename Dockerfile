@@ -1,4 +1,4 @@
-FROM remche/jupyterhub-bash:0.6
+FROM remche/bash-notebook:0.7
 
 USER root
 
