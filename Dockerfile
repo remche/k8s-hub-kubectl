@@ -20,3 +20,6 @@ RUN wget https://raw.githubusercontent.com/ahmetb/kubectx/master/kubens -O $BIN_
 RUN mkdir /etc/bash_completion.d && kubectl completion bash > /etc/bash_completion.d/kubectl
 
 USER jovyan
+
+COPY logo-32x32.png /home/jovyan/.local/share/jupyter/kernels/bash/
+COPY logo-64x64.png /home/jovyan/.local/share/jupyter/kernels/bash/
