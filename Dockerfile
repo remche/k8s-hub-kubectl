@@ -1,4 +1,4 @@
-FROM remche/bash-notebook:0.7
+FROM remche/bash-notebook:0.8
 
 USER root
 
