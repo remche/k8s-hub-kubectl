@@ -17,6 +17,9 @@ RUN wget https://storage.googleapis.com/kubernetes-release/release/$KUBECTL_VERS
 RUN wget https://raw.githubusercontent.com/ahmetb/kubectx/master/kubens -O $BIN_PATH/kubens && \
     chmod +x $BIN_PATH/kubens
 
+RUN wget https://raw.githubusercontent.com/johanhaleby/kubetail/master/kubetail -O $BIN_PATH/kubetail && \
+    chmod +x $BIN_PATH/kubetail
+
 RUN mkdir -p /etc/bash_completion.d && kubectl completion bash > /etc/bash_completion.d/kubectl
 
 COPY logo-32x32.png /usr/share/pixmaps/
